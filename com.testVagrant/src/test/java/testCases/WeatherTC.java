@@ -4,7 +4,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pages.HomePage;
 import pages.WeatherPage;
 import utilities.BaseClass;
@@ -15,6 +14,7 @@ public class WeatherTC extends BaseClass {
 
 	@Test
 	public void getWeatherDeatils() throws Exception {
+		
 		HomePage home = new HomePage(driver);
 		WeatherPage weather = new WeatherPage(driver);
 		String cityName=configuration.readCity();
@@ -34,6 +34,7 @@ public class WeatherTC extends BaseClass {
 		weather.city.click();
 		String weatherDetails=weather.details.getText();
 		System.out.println("Weather Details for: "+cityDetails+" is :"+weatherDetails);
+		Thread.sleep(5000);
 
 	}
 
