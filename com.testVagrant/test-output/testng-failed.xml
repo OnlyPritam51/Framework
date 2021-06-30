@@ -6,7 +6,6 @@
       <class name="testCases.WeatherTC">
         <methods>
           <include name="getWeatherDeatils"/>
-          <include name="closeBrowser"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- testCases.WeatherTC -->
